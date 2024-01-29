@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
 /* css reset */
 *, *::before, *::after {
 box-sizing: border-box;
@@ -19,5 +20,24 @@ padding: 0;
 
 body {
 min-height: 100vh;
+font-family: 'Noto Sans', sans-serif;
+padding: 1em;
+/* background-color: #eef0f4; */
+background-color: #1f1f1f;
+}
+.shadow{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.411);
 }
 
+button{
+    border-radius: 15px;
+    padding: 1em 3em;
+     background-color: #2a3126;
+    color: #e3e3dc;
+    outline: none;
+    border: none;
+    margin:0.125em;
+}
+button:hover{
+    cursor: pointer;
+}

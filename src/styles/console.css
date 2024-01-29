@@ -1,0 +1,31 @@
+.console{
+    border: 2px solid #3b4b33;
+    padding: 1em;
+    width:365px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    background-color: #1b1e187d;
+    border-radius: 10px;
+    background-blend-mode: darken;
+}
+.console:hover, .console:focus{
+    background-image: url('../assets/console-bg.avif');
+    background-color: rgb(84, 84, 84);
+}
+.console>button:first-child{
+    width: 100%;
+}
+.console>button:nth-child(2){
+    background-color: #2f2525;
+}
+.console>button:nth-child(2):hover,.console>button:nth-child(2):focus{
+    background-color: #684c4c;
+}
+.console>button:nth-child(3):hover,.console>button:nth-child(3):focus{
+    background-color: #205107;
+}
+.console>button:first-child:hover,.console>button:first-child:focus{
+   background-color: #3e4a36;
+}

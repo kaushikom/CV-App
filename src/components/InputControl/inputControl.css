@@ -1,0 +1,10 @@
+input, textarea{
+     border-radius: 10px;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    margin: 1em 0;
+}
+input:focus, textarea:focus {
+    outline: 4px #419360 solid;
+}

@@ -1,0 +1,25 @@
+.header{
+    border-radius: 10px;
+    padding: 1em 1em;
+    text-align: center;
+    background-image: url('../assets/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: #419360;
+    width: 500px;
+    color: #e3e3e3;
+}
+.header h1 {
+    font-size: 4.5rem;
+}
+
+.header a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #e3e3e3;
+}
+.header a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
