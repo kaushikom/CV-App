@@ -1,13 +1,13 @@
 import { useState } from "react";
 import arrowIcon from '../assets/dropdown-icon.png'
-function GenericCard({ title, children }) {
+function GenericCard({ title, onSubmit, children }) {
     const [isOpen, setIsOpen] = useState(false);
     function handleClick() {
         setIsOpen(!isOpen);
     }
     const className = isOpen ? 'active' : '';
     return (
-        <form className='card shadow'>
+        <form className='card shadow' onSubmit={onSubmit}>
             <div className="form-heading" onClick={handleClick}>
                 <h2>{title}</h2>
                 <img src={arrowIcon} alt="" className={className} />
