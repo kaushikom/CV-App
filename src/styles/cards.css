@@ -32,3 +32,34 @@ form label:first-of-type {
 .active {
     transform: rotate(180deg);
 }
+.form-heading{
+    margin-bottom: 0.5em;
+}
+.card > .section-name img{
+    filter: invert();
+    height: 25px;
+    width: auto;
+    /* border: 1px solid red; */
+}
+.card > .section-name img:hover{
+    cursor: pointer;
+}
+.card > .section-name {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em;
+    background-color: #37393a;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+.card > .section-name > h2{
+    width: 90%;
+}
+.card > .section-name > h2:hover{
+    cursor: pointer;
+}
+.card > button {
+    margin-top: 0.5em;
+}

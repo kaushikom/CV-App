@@ -29,6 +29,15 @@ function App() {
       details: []
     }
   })
+  const deleteResumeInfo = (section, indexToRemove) => {
+    setResumeInfo(prevResumeInfo => ({
+      ...prevResumeInfo,
+      [section]: {
+        ...prevResumeInfo[section],
+        details: prevResumeInfo[section].details.filter((_, index) => index !== indexToRemove)
+      }
+    }));
+  };
   const updateResumeInfo = (section, updatedDetails) => {
     setResumeInfo(prevResumeInfo => {
       const existingIndex = prevResumeInfo[section].details.findIndex(detail => detail.name === updatedDetails.name);
@@ -59,7 +68,7 @@ function App() {
     <>
       <Header />
       <Console />
-      <Cards info={resumeInfo} updateResumeInfo={updateResumeInfo} />
+      <Cards info={resumeInfo} updateResumeInfo={updateResumeInfo} deleteResumeInfo={deleteResumeInfo} />
     </>
   )
 }
