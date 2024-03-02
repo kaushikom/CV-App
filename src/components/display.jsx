@@ -44,7 +44,7 @@ const display = forwardRef(({ info }, ref) => {
                         <h2>Experience</h2>
                         {info.experience.details.map(detail => <div className="exp" key={detail.name} >
                             <h3>{detail.name}</h3>
-                            <p>{detail.sdate} to {detail.edate} </p>
+                            <p>{detail.sDate} to {detail.eDate} </p>
                             <p><b>{detail.job}</b></p>
                             <p>{detail.description}</p>
                         </div>)}
