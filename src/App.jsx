@@ -4,7 +4,7 @@ import Header from './components/header'
 import Console from './components/console'
 import Cards from './components/cards'
 import exampleResume from './example.json'
-import Display from './components/Display';
+import Display from './components/display';
 function App() {
   const resumeRef = useRef();
   const generateInitialState = () => ({

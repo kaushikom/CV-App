@@ -65,4 +65,4 @@ const Display = forwardRef(({ info }, ref) => {
         </main>
     )
 })
-export default Display;
+export default display;
