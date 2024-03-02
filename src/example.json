@@ -1,0 +1,100 @@
+{
+    "personalDetails": {
+        "id": "Personal Details",
+        "details": [
+            {
+                "name": "Your Name",
+                "email": "example@gmail.com",
+                "job": "Job Title",
+                "location": "Location",
+                "linkedIn": "https://www.linkedin.com",
+                "github": "https://wwww.github.com"
+            }
+        ]
+    },
+    "experience": {
+        "id": "Experience",
+        "details": [
+            {
+                "name": "Company Name 1",
+                "location": "Location",
+                "job": "Job Title",
+                "sdate": "2024-3",
+                "edate": "2024-5",
+                "description": "Your tasks and responsibilities.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium at voluptates voluptatibus a ad, sit ullam ab porro doloribus magnam sed ipsa minima impedit consequatur maiores voluptatem numquam tempora eveniet exercitationem "
+            },
+            {
+                "name": "Company Name 2",
+                "location": "Location",
+                "job": "Job Title",
+                "sdate": "2024-3",
+                "edate": "2024-5",
+                "description": "Your tasks and responsibilities.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium at voluptates voluptatibus a ad, sit ullam ab porro doloribus magnam sed ipsa minima impedit consequatur maiores voluptatem numquam tempora eveniet exercitationem "
+            }
+        ]
+    },
+    "projects": {
+        "id": "Projects",
+        "details": [
+            {
+                "name": "Project 1",
+                "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium at voluptates voluptatibus a ad, sit ullam ab porro doloribus magnam sed ipsa minima impedit consequatur maiores voluptatem numquam tempora eveniet exercitationem ",
+                "github": "https://wwww.github.com",
+                "liveLink": "https:www.github.com"
+            },
+            {
+                "name": "Project 2",
+                "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium at voluptates voluptatibus a ad, sit ullam ab porro doloribus magnam sed ipsa minima impedit consequatur maiores voluptatem numquam tempora eveniet exercitationem ",
+                "github": "https://wwww.github.com",
+                "liveLink": "https:www.github.com"
+            }
+        ]
+    },
+    "skills": {
+        "id": "Skills",
+        "details": [
+            {
+                "name": "Skills Heading 1",
+                "skills": "skill 1, skill 2, skill 3, etc"
+            },
+            {
+                "name": "Skills Heading 2",
+                "skills": "skill 1, skill 2, skill 3, etc"
+            }
+        ]
+    },
+    "certifications": {
+        "id": "Certifications",
+        "details": [
+            {
+                "name": "Certificate Name 1",
+                "issuer": "Issuer Name",
+                "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium at voluptates voluptatibus a ad, sit ullam ab porro doloribus magnam sed ipsa minima impedit consequatur maiores voluptatem numquam tempora eveniet exercitationem"
+            },
+            {
+                "name": "Certificate Name 2",
+                "issuer": "Issuer Name",
+                "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium at voluptates voluptatibus a ad, sit ullam ab porro doloribus magnam sed ipsa minima impedit consequatur maiores voluptatem numquam tempora eveniet exercitationem "
+            }
+        ]
+    },
+    "education": {
+        "id": "Education",
+        "details": [
+            {
+                "name": "Institute Name",
+                "location": "Location",
+                "degree": "Degree Name",
+                "field": "Field Of Study",
+                "gYear": "Graduation Year"
+            },
+            {
+                "name": "Institute Name",
+                "location": "Location",
+                "degree": "Degree Name",
+                "field": "Field Of Study",
+                "gYear": "Graduation Year"
+            }
+        ]
+    }
+}

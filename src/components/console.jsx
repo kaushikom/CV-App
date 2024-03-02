@@ -1,9 +1,9 @@
 import '../styles/console.css'
-function Console() {
+function Console({ clearResume, loadExample }) {
     return (
         <section className='shadow console'>
-            <button >Load Example</button>
-            <button>Clear</button>
+            <button onClick={loadExample} >Load Example</button>
+            <button onClick={clearResume} >Clear</button>
             <button >Download</button>
         </section>
     )

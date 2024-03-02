@@ -2,8 +2,10 @@ import { useState } from 'react'
 import Header from './components/header'
 import Console from './components/console'
 import Cards from './components/cards'
+import exampleResume from './example.json'
+import Display from './components/display'
 function App() {
-  const [resumeInfo, setResumeInfo] = useState({
+  const generateInitialState = () => ({
     personalDetails: {
       id: 'Personal Details',
       details: []
@@ -29,6 +31,7 @@ function App() {
       details: []
     }
   })
+  const [resumeInfo, setResumeInfo] = useState(generateInitialState())
   const deleteResumeInfo = (section, indexToRemove) => {
     setResumeInfo(prevResumeInfo => ({
       ...prevResumeInfo,
@@ -63,12 +66,23 @@ function App() {
     }
     )
   }
+  const clearResume = () => {
+    setResumeInfo(generateInitialState());
+  }
+  const loadExample = () => {
+    setResumeInfo(exampleResume);
+  }
   console.log(resumeInfo);
   return (
     <>
-      <Header />
-      <Console />
-      <Cards info={resumeInfo} updateResumeInfo={updateResumeInfo} deleteResumeInfo={deleteResumeInfo} />
+      <div className="left">
+        <Header />
+        <Console clearResume={clearResume} loadExample={loadExample} />
+        <Cards info={resumeInfo} updateResumeInfo={updateResumeInfo} deleteResumeInfo={deleteResumeInfo} />
+      </div>
+      <div className="right">
+        <Display info={resumeInfo} />
+      </div>
     </>
   )
 }

@@ -2,7 +2,7 @@
     background-color: #28292a;
     color: #e3e3e3;
     border-radius: 10px;
-    max-width: 50%;
+ 
     padding: 1em 3em;
     margin-top: 1em;
     display: flex;
@@ -51,15 +51,23 @@ form label:first-of-type {
     align-items: center;
     margin: 0.5em;
     background-color: #37393a;
-    padding: 0.5em;
+    padding: 0.5em 1.5em;
     border-radius: 10px;
 }
 .card > .section-name > h2{
     width: 90%;
+    font-size: 1.125rem;
 }
 .card > .section-name > h2:hover{
     cursor: pointer;
 }
 .card > button {
     margin-top: 0.5em;
+}
+.card button {
+    background-color: rgba(0, 128, 0, 0.386);
+}
+.card button:hover {
+    background-color: rgba(0, 128, 0, 0.579);
+    cursor: pointer;
 }
