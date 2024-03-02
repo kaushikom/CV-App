@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react';
+import ReactToPrint from 'react-to-print'
 import Header from './components/header'
 import Console from './components/console'
 import Cards from './components/cards'
 import exampleResume from './example.json'
-import Display from './components/display'
+import Display from './components/Display';
 function App() {
+  const resumeRef = useRef();
   const generateInitialState = () => ({
     personalDetails: {
       id: 'Personal Details',
@@ -77,11 +79,11 @@ function App() {
     <>
       <div className="left">
         <Header />
-        <Console clearResume={clearResume} loadExample={loadExample} />
+        <Console clearResume={clearResume} loadExample={loadExample} resumeRef={resumeRef} />
         <Cards info={resumeInfo} updateResumeInfo={updateResumeInfo} deleteResumeInfo={deleteResumeInfo} />
       </div>
       <div className="right">
-        <Display info={resumeInfo} />
+        <Display info={resumeInfo} ref={resumeRef} />
       </div>
     </>
   )

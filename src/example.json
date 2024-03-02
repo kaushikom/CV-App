@@ -82,14 +82,14 @@
         "id": "Education",
         "details": [
             {
-                "name": "Institute Name",
+                "name": "Institute Name 1",
                 "location": "Location",
                 "degree": "Degree Name",
                 "field": "Field Of Study",
                 "gYear": "Graduation Year"
             },
             {
-                "name": "Institute Name",
+                "name": "Institute Name 2",
                 "location": "Location",
                 "degree": "Degree Name",
                 "field": "Field Of Study",

@@ -4,11 +4,12 @@ import githubIcon from '../assets/resumeIcons/icons8-github-48.png'
 import linkedInIcon from '../assets/resumeIcons/icons8-linkedin-48.png'
 import locationIcon from '../assets/resumeIcons/icons8-location-48.png'
 import webIcon from '../assets/resumeIcons/icons8-web-48.png'
+import { forwardRef } from 'react'
 
-export default function Display({ info }) {
+const Display = forwardRef(({ info }, ref) => {
     const latestPersonalDetails = info.personalDetails.details[info.personalDetails.details.length - 1]
     return (
-        <main className='display-container' >
+        <main className='display-container' ref={ref}>
             {latestPersonalDetails && <div className="personalDetails">
                 <h1>{latestPersonalDetails.name}</h1>
                 <nav>
@@ -63,4 +64,5 @@ export default function Display({ info }) {
             </div>
         </main>
     )
-}
+})
+export default Display;
