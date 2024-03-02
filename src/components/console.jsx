@@ -1,6 +1,5 @@
 import '../styles/console.css'
 import ReactToPrint from 'react-to-print';
-import Display from './Display';
 
 function Console({ clearResume, loadExample, resumeRef }) {
     return (
