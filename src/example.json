@@ -27,8 +27,8 @@
                 "name": "Company Name 2",
                 "location": "Location",
                 "job": "Job Title",
-                "sdate": "2024-3",
-                "edate": "2024-5",
+                "sDate": "2024-3",
+                "eDate": "2024-5",
                 "description": "Your tasks and responsibilities.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium at voluptates voluptatibus a ad, sit ullam ab porro doloribus magnam sed ipsa minima impedit consequatur maiores voluptatem numquam tempora eveniet exercitationem "
             }
         ]
