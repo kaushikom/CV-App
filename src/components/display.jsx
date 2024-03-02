@@ -6,7 +6,7 @@ import locationIcon from '../assets/resumeIcons/icons8-location-48.png'
 import webIcon from '../assets/resumeIcons/icons8-web-48.png'
 import { forwardRef } from 'react'
 
-const Display = forwardRef(({ info }, ref) => {
+const display = forwardRef(({ info }, ref) => {
     const latestPersonalDetails = info.personalDetails.details[info.personalDetails.details.length - 1]
     return (
         <main className='display-container' ref={ref}>
