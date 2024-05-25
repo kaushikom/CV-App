@@ -85,6 +85,9 @@ function App() {
       <div className="right">
         <Display info={resumeInfo} ref={resumeRef} />
       </div>
+      <div className = 's_screen_error'>
+  <span id='s_screen_error_text'>Please open this webpage in a bigger window.</span>
+  </div>
     </>
   )
 }
